@@ -1,38 +1,128 @@
-.App {
+.App{
+  width: 50vw;
+  height: 90vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  border: 1px solid #eee;
+  box-shadow: -2px -2px #ccc,
+              1px 1px 10px #262626;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1{
+  width: 100%;
+  font-size: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+span{
+  width: 100%;
+  margin-top: 20px;
+  font-weight: lighter;
+  font-size: 25px;
+  color: gray;
+}
+
+input{
+  width: 50%;
+  height: 50px;
+  margin: 5px 0;
+  border: 0;
+  border-radius: 5px;
+  outline: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 0 10px;
+  text-align: center;
+  background-color: #121212;
+}
+
+button{
+  width: 50%;
+  height: 50px;
+  margin: 10px 0;
+  cursor: pointer;
+  border: 0;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #fff;
+  background-color: rgb(235, 166, 17);
+}
+
+label{
+  width: 80%;
+  margin-top: 20px;
+  padding: 5px;
+  color: #262626;
+  font-size: 26px;
+  box-shadow: 1px 1px 10px #000;
+}
+
+.disabled{
+  display: none;
+}
+
+p{
+  position: absolute;
+  bottom: 5%;
+
+  color: transparent;
+  background-color: rgba(255, 255, 255, 0.4);
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+  -moz-background-clip: text;
+  background-clip: text;
+}
+
+@media screen and (max-width: 1280px){
+  h1{
+    font-size: 45px;
+  }
+  span{
+    font-size: 20px;
+  }
+  input{
+    font-size: 18px;
+  }
+  button{
+    font-size: 18px;
+  }
+  label{
+    font-size: 20px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 1024px){
+  h1{
+    font-size: 40px;
   }
-  to {
-    transform: rotate(360deg);
+  label{
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 540px){
+  h1{
+    font-size: 25px;
+  }
+  span{
+    font-size: 15px;
+  }
+  input{
+    height: 40px;
+    font-size: 14px;
+  }
+  button{
+    height: 40px;
+    font-size: 18px;
+  }
+  p{
+    font-size: 14px;
   }
 }
